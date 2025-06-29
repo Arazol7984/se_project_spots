@@ -1,0 +1,116 @@
+.profile {
+  display: flex;
+  padding: 34px 0 20px 0;
+  border-bottom: 1px rgba(33, 33, 33, 0.4) solid;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.profile__avatar {
+  height: 190px;
+  width: 190px;
+  margin-right: 20px;
+}
+
+.profile__column {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile__name {
+  margin: 0 0 12px;
+  font-weight: 500;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  max-width: 420px;
+}
+
+.profile__description {
+  margin: 0;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  max-width: 420px;
+}
+
+.profile__edit-btn {
+  margin-top: auto;
+  background-color: transparent;
+  border: none;
+  width: fit-content;
+  transition: opacity 0.3s ease;
+}
+
+.profile__edit-btn:hover {
+  opacity: 0.7;
+}
+
+.profile__add-btn {
+  margin-left: auto;
+  width: 149px;
+  height: 52px;
+  background-color: #212121;
+  border-radius: 8px;
+  overflow: hidden;
+  white-space: nowrap;
+  color: #fcf5e5;
+  position: absolute;
+  display: flex;
+  align-items: row;
+  bottom: 20px;
+  left: 1170px;
+  gap: 8px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  padding: 18px 32px 18px 32px;
+  flex-shrink: 0;
+  transition: opacity 0.3s ease;
+}
+
+.profile__add-btn:hover {
+  opacity: 0.7;
+}
+
+@media screen and (max-width: 627px) {
+  .profile {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+  }
+
+  .profile__avatar {
+    margin: 0 0 12px;
+    height: 80px;
+    width: 80px;
+  }
+
+  .profile__name {
+    margin-bottom: 6px;
+    font-size: 20px;
+    max-width: 288px;
+  }
+
+  .profile__description {
+    margin-bottom: 32px;
+    font-size: 16px;
+    max-width: 288px;
+  }
+
+  .profile__column {
+    text-align: center;
+    margin-right: 0;
+  }
+
+  .profile__add-btn {
+    margin-left: 0;
+    max-width: 288px;
+    width: 100%;
+  }
+}
