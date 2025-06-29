@@ -19,3 +19,4 @@ This page shows 7 images total, a profile image, along with 6 images of resort/t
 This webpage is deployed and hosted at Github Pages.
 
 - Deployment Link: https://arazol7984.github.io/se_project_spots/
+- Video Link : https://drive.google.com/file/d/1Lbx5fz395vLGp1Xb-CyHW4tX8Bgj5oFU/view
