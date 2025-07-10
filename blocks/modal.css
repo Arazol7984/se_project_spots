@@ -56,3 +56,7 @@
 .modal__input::placeholder {
   color: #212121;
 }
+
+.modal__submit-btn {
+  max-width: 156px;
+}
