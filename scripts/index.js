@@ -41,4 +41,15 @@ function handleEditProfileSubmit(evt) {
   editProfileModal.classList.remove("modal_is-opened");
 }
 
-editProfileForm.addEventListener("submit", handleEditProfileSubmit);
+const addCardFormElement = newPostModal.querySelector(".modal__form");
+const nameInput = newPostModal.querySelector("#caption-description-input");
+const linkInput = newPostModal.querySelector("#card-image-input");
+
+function handleAddCardSubmit(evt) {
+  evt.preventDefault();
+  console.log("Image Link:", linkInput.value);
+  console.log("Caption:", nameInput.value);
+  newPostModal.classList.remove("modal_is-opened");
+}
+
+addCardFormElement.addEventListener("submit", handleAddCardSubmit);

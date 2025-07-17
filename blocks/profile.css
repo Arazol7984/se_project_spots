@@ -122,8 +122,7 @@
   }
 
   .profile__add-btn {
-    margin-left: 0;
-    max-width: 288px;
+    gap: 8px;
     width: 100%;
   }
 }
