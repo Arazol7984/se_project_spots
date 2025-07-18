@@ -99,7 +99,7 @@
   .modal__container {
     width: 320px;
     height: auto;
-    padding: 20px 20px 36px;
+    padding: 22px 12px 12px;
     border-radius: 10px;
   }
 
@@ -112,8 +112,8 @@
   }
 
   .modal__close-btn {
-    top: 20px;
-    right: 20px;
+    top: 10px;
+    right: 10px;
     width: 40px;
     height: 40px;
     background-size: contain;
