@@ -129,10 +129,11 @@
 }
 
 .modal__caption {
+  position: absolute;
+  left: 0;
+  top: calc(100% + 10px);
   color: white;
   background-color: #212121;
-  width: 214px;
-  height: 32px;
   border-radius: 8px;
   padding: 4px 8px;
   font-size: 20px;
@@ -143,6 +144,10 @@
 }
 
 @media screen and (max-width: 480px) {
+  .modal__caption {
+    font-size: 16px;
+  }
+
   .modal__container {
     width: 320px;
     height: auto;
@@ -200,12 +205,12 @@
 }
 
 @media screen and (max-width: 627px) {
-  .modal_close_type_preview {
+  .modal__close-btn {
     top: -48px;
     right: 0;
   }
 
-  .modal_type_preview {
+  .modal__image {
     max-width: unset;
   }
 }
