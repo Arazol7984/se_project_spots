@@ -67,7 +67,13 @@
                 type="text"
                 class="modal__input"
                 placeholder="Type your name"
+                minlength="2"
+                maxlength="40"
+                required
               />
+              <span id="profile-name-input-error" class="modal__error"
+                >Please fill out this field.</span
+              >
             </label>
             <label for="profile-description-input" class="modal__label">
               Description
@@ -76,7 +82,13 @@
                 type="text"
                 class="modal__input"
                 placeholder="Describe yourself"
+                minlength="2"
+                maxlength="200"
+                required
               />
+              <span id="profile-description-input-error" class="modal__error"
+                >Please lengthen this text to 2 characters or more</span
+              >
             </label>
             <button type="submit" class="modal__submit-btn">Save</button>
           </form>
@@ -105,7 +117,11 @@
                 type="url"
                 class="modal__input"
                 placeholder="Place a link to the picture"
+                required
               />
+              <span id="card-image-input-error" class="modal__error"
+                >Please enter a URL.</span
+              >
             </label>
             <label for="caption-description-input" class="modal__label">
               Caption
@@ -114,13 +130,20 @@
                 type="text"
                 class="modal__input"
                 placeholder="Type your caption"
+                minlength="2"
+                maxlength="30"
+                required
               />
+              <span id="caption-description-input-error" class="modal__error"
+                >Please fill out this field.</span
+              >
             </label>
             <button type="submit" class="modal__submit-btn">Save</button>
           </form>
         </div>
       </div>
     </div>
+    <script src="./scripts/validation.js"></script>
     <script src="./scripts/index.js"></script>
   </body>
 </html>
