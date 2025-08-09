@@ -21,6 +21,17 @@ const hideInputError = (formEl, inputEl, { inputErrorClass, errorClass }) => {
   errorMsgEl.classList.remove(errorClass);
 };
 
+const resetValidation = (formEl, config) => {
+  const inputList = [...formEl.querySelectorAll(config.inputSelector)];
+  const submitButton = formEl.querySelector(config.submitButtonSelector);
+
+  toggleButtonState(inputList, submitButton, config);
+
+  inputList.forEach((inputEl) => {
+    hideInputError(formEl, inputEl, config);
+  });
+};
+
 const checkInputValidity = (formEl, inputEl, config) => {
   if (!inputEl.validity.valid) {
     return showInputError(formEl, inputEl, config);
@@ -69,3 +80,12 @@ const enableValidation = (config) => {
 };
 
 enableValidation(config);
+
+export {
+  config,
+  showInputError,
+  hideInputError,
+  toggleButtonState,
+  resetValidation,
+  enableValidation,
+};

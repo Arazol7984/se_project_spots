@@ -1,3 +1,10 @@
+import {
+  config,
+  resetValidation,
+  toggleButtonState,
+  hideInputError,
+} from "./validation.js";
+
 const initialCards = [
   {
     name: "Golden Gate Bridge",
@@ -154,14 +161,7 @@ function handleAddCardSubmit(evt) {
 editProfileBtn.addEventListener("click", function () {
   editProfileNameInput.value = profileNameEl.textContent;
   editProfileDescriptionInput.value = profileDescriptionEl.textContent;
-  const submitButton = editProfileForm.querySelector(
-    config.submitButtonSelector
-  );
-  const inputList = [...editProfileForm.querySelectorAll(config.inputSelector)];
-  toggleButtonState(inputList, submitButton, config);
-  inputList.forEach((inputEl) => {
-    hideInputError(editProfileForm, inputEl, config);
-  });
+  resetValidation(editProfileForm, config);
   openModal(editProfileModal);
 });
 
